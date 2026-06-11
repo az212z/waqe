@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>علي · مصمم مواقع | مواقع راقية للكوفيات والمطاعم والسبا</title>
+<meta name="description" content="علي، مصمم مواقع سعودي. أكثر من 75 موقعًا منشورًا لكوفيات ومطاعم وسبا وعيادات ومكاتب هندسية في 7 مدن. موقع راقٍ يعكس هوية مشروعك ويحوّل الزائر إلى عميل.">
+<meta property="og:title" content="علي · مصمم مواقع للأعمال السعودية">
+<meta property="og:description" content="أكثر من 75 موقعًا منشورًا لكوفيات ومطاعم وسبا وعيادات. موقعك التالي يبدأ برسالة واتساب.">
+<meta property="og:image" content="https://az212z.github.io/aand-cafe/img/storefront.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0b0b0d">
+<link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="%230b0b0d"/><text x="32" y="44" text-anchor="middle" font-family="sans-serif" font-size="34" fill="%23d9a662">ع</text></svg>'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@300;400;500&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "علي لتصميم المواقع | ALI.DESIGN",
+  "description": "تصميم مواقع للكوفيات والمطاعم والسبا والعيادات والمكاتب الهندسية في السعودية",
+  "telephone": "+966505989304",
+  "areaServed": "SA",
+  "sameAs": ["https://www.tiktok.com/@ali.design02"]
+}
+</script>
+<style>
+:root{
+  --bg:#0b0b0d; --bg2:#101013; --panel:#15151a; --panel2:#1a1a20;
+  --line:rgba(242,239,232,.08); --line2:rgba(242,239,232,.16);
+  --text:#f2efe8; --muted:#a7a296; --dim:#716c61;
+  --tan:#d9a662; --tan2:#ecc285; --tan-soft:rgba(217,166,98,.12);
+  --fd:'Alexandria',sans-serif; --fb:'IBM Plex Sans Arabic',sans-serif; --fl:'Space Grotesk',sans-serif;
+  --ease:cubic-bezier(.16,1,.3,1);
+  --r:18px; --r-ph:30px;
+  --maxw:1280px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--text);font-family:var(--fb);font-weight:300;line-height:1.9;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+::selection{background:var(--tan);color:var(--bg)}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--fd);line-height:1.35}
+.lat{font-family:var(--fl);letter-spacing:.04em}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+
+/* film grain, fixed + pointer-events none so it never repaints on scroll */
+.grain{position:fixed;inset:0;z-index:80;pointer-events:none;opacity:.045;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* ---------- nav ---------- */
+nav{position:fixed;top:0;right:0;left:0;z-index:90;height:70px;display:flex;align-items:center;transition:background .4s var(--ease),border-color .4s var(--ease);border-bottom:1px solid transparent}
+nav.on{background:rgba(11,11,13,.82);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-color:var(--line)}
+nav .wrap{width:100%;display:flex;align-items:center;gap:36px}
+.logo{font-family:var(--fd);font-weight:800;font-size:24px;letter-spacing:.01em}
+.logo b{color:var(--tan);font-weight:800}
+.nav-links{display:flex;gap:30px;font-size:14.5px;color:var(--muted);font-weight:400}
+.nav-links a{transition:color .3s}
+.nav-links a:hover{color:var(--text)}
+.nav-cta{margin-inline-start:auto}
+
+/* ---------- buttons : pill system ---------- */
+.btn{display:inline-flex;align-items:center;gap:10px;border-radius:999px;font-family:var(--fd);font-weight:600;font-size:15px;padding:14px 30px;transition:transform .3s var(--ease),box-shadow .3s var(--ease),background .3s;cursor:pointer;white-space:nowrap}
+.btn:active{transform:scale(.97)}
+.btn-tan{background:var(--tan);color:#141009}
+.btn-tan:hover{background:var(--tan2);transform:translateY(-2px);box-shadow:0 14px 40px rgba(217,166,98,.22)}
+.btn-ghost{border:1px solid var(--line2);color:var(--text)}
+.btn-ghost:hover{border-color:var(--tan);color:var(--tan2);transform:translateY(-2px)}
+.btn-sm{padding:10px 22px;font-size:13.5px}
+.btn img{width:17px;height:17px}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:100dvh;display:flex;align-items:center;padding-top:96px;padding-bottom:40px;overflow:hidden}
+.hero-glow{position:absolute;inset:0;pointer-events:none;background:
+  radial-gradient(900px 480px at 85% 10%,rgba(217,166,98,.09),transparent 60%),
+  radial-gradient(700px 500px at 10% 90%,rgba(217,166,98,.05),transparent 60%)}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center;position:relative}
+.hi{font-size:15px;color:var(--tan);font-weight:400;margin-bottom:18px}
+.hero h1{font-size:clamp(36px,5vw,58px);font-weight:800;letter-spacing:-.01em;line-height:1.3;margin-bottom:24px}
+.hero h1 em{font-style:normal;color:var(--tan)}
+.hero p{font-size:clamp(16px,1.6vw,19px);color:var(--muted);max-width:54ch;margin-bottom:38px}
+.hero-ctas{display:flex;gap:16px;flex-wrap:wrap}
+
+/* phone mockup */
+.ph{position:relative;border-radius:var(--r-ph);border:1px solid var(--line2);background:var(--panel);padding:12px;box-shadow:0 40px 90px rgba(0,0,0,.5)}
+.ph::after{content:"";position:absolute;top:24px;left:50%;transform:translateX(-50%);width:84px;height:22px;border-radius:999px;background:var(--bg);z-index:3}
+.ph-screen{position:relative;overflow:hidden;border-radius:calc(var(--r-ph) - 10px);background:var(--bg2)}
+.ph-screen iframe{position:absolute;top:0;left:0;width:390px;border:0;transform-origin:top left;pointer-events:none;background:var(--bg2)}
+.ph-tag{position:absolute;bottom:-16px;inset-inline-start:50%;transform:translateX(50%);background:var(--tan);color:#141009;font-family:var(--fd);font-weight:700;font-size:12.5px;padding:7px 18px;border-radius:999px;white-space:nowrap;z-index:4}
+.hero-ph{width:min(330px,80vw);margin-inline-start:auto;transform:rotate(-3deg)}
+.hero-ph .ph-screen{height:560px}
+
+/* ---------- marquee ---------- */
+.mq{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:26px 0;overflow:hidden;background:var(--bg2)}
+.mq-track{display:flex;width:max-content;direction:ltr;animation:mq 60s linear infinite}
+.mq-seq{display:flex;align-items:center}
+.mq span{font-family:var(--fd);font-weight:500;font-size:17px;color:var(--dim);padding:0 26px;white-space:nowrap;transition:color .3s}
+.mq span:hover{color:var(--tan2)}
+.mq i{width:5px;height:5px;background:var(--tan);transform:rotate(45deg);opacity:.5;flex:none}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* ---------- stats ---------- */
+.stats{padding:90px 0 30px}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.stat{padding:10px 36px;border-inline-start:1px solid var(--line)}
+.stat:last-child{border-inline-end:1px solid var(--line)}
+.stat b{display:block;font-family:var(--fl);font-weight:600;font-size:clamp(34px,4vw,52px);color:var(--text);line-height:1.2}
+.stat b small{font-size:.55em;color:var(--tan);font-weight:500}
+.stat span{font-size:14.5px;color:var(--muted)}
+
+/* ---------- sections ---------- */
+section{padding:110px 0}
+.sec-head{margin-bottom:56px;max-width:680px}
+.sec-head h2{font-size:clamp(30px,4.2vw,46px);font-weight:700;margin-bottom:14px}
+.sec-head h2 em{font-style:normal;color:var(--tan)}
+.sec-head p{color:var(--muted);font-size:16.5px}
+
+/* ---------- work grid ---------- */
+.tabs{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:42px}
+.tab{font-family:var(--fd);font-weight:500;font-size:14px;color:var(--muted);border:1px solid var(--line2);border-radius:999px;padding:9px 22px;background:none;cursor:pointer;transition:all .3s var(--ease)}
+.tab:hover{color:var(--text);border-color:var(--dim)}
+.tab.on{background:var(--tan);border-color:var(--tan);color:#141009;font-weight:600}
+.works{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.wk{border:1px solid var(--line);border-radius:var(--r);background:var(--panel);overflow:hidden;transition:transform .45s var(--ease),border-color .45s,box-shadow .45s;display:block}
+.wk:hover{transform:translateY(-6px);border-color:rgba(217,166,98,.45);box-shadow:0 30px 70px rgba(0,0,0,.45)}
+.wk.hide{display:none}
+.wk-bar{display:flex;align-items:center;justify-content:center;padding:11px 16px;border-bottom:1px solid var(--line)}
+.wk-bar span{font-family:var(--fl);font-size:11.5px;color:var(--dim);background:var(--bg);border-radius:999px;padding:4px 16px;direction:ltr}
+.wk-prev{position:relative;height:400px;overflow:hidden;background:var(--bg2)}
+.wk-prev iframe{position:absolute;top:0;left:0;width:390px;border:0;transform-origin:top left;pointer-events:none;background:var(--bg2)}
+.wk-load{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-size:14px;color:var(--dim);background:linear-gradient(160deg,var(--panel2),var(--bg2))}
+.wk-info{display:flex;align-items:center;gap:14px;padding:18px 22px;border-top:1px solid var(--line)}
+.wk-info h3{font-size:17.5px;font-weight:600}
+.wk-info p{font-size:13px;color:var(--muted)}
+.wk-go{margin-inline-start:auto;font-family:var(--fd);font-size:13px;font-weight:600;color:var(--tan);white-space:nowrap}
+.wk:hover .wk-go{color:var(--tan2)}
+.work-note{margin-top:34px;text-align:center;color:var(--dim);font-size:14px}
+.work-note a{color:var(--tan);font-weight:400}
+.work-note a:hover{color:var(--tan2)}
+
+/* ---------- sectors bento ---------- */
+#sectors{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.bento{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:230px;gap:18px}
+.bn{position:relative;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);transition:transform .45s var(--ease),border-color .45s}
+.bn:hover{transform:translateY(-5px);border-color:rgba(217,166,98,.4)}
+.bn img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease);filter:saturate(.92)}
+.bn:hover img{transform:scale(1.06)}
+.bn::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(11,11,13,.92) 8%,rgba(11,11,13,.25) 55%,rgba(11,11,13,.05))}
+.bn-txt{position:absolute;bottom:0;right:0;left:0;padding:22px 24px;z-index:2}
+.bn-txt h3{font-size:19px;font-weight:700}
+.bn-txt p{font-size:13px;color:var(--muted)}
+.bn-big{grid-column:span 2;grid-row:span 2}
+.bn-big .bn-txt h3{font-size:26px}
+.bn-big .bn-txt p{font-size:14.5px;max-width:40ch}
+
+/* ---------- process ---------- */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative}
+.steps::before{content:"";position:absolute;top:7px;right:8px;left:8px;height:1px;background:var(--line2)}
+.step{padding:38px 30px 0 18px;position:relative}
+.step::before{content:"";position:absolute;top:0;inset-inline-start:0;width:15px;height:15px;background:var(--tan);transform:rotate(45deg)}
+.step h3{font-size:19px;font-weight:700;margin-bottom:10px}
+.step p{font-size:14.5px;color:var(--muted)}
+
+/* ---------- packages ---------- */
+#plans{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;align-items:stretch}
+.plan{border:1px solid var(--line);border-radius:var(--r);background:var(--panel);padding:40px 34px;display:flex;flex-direction:column;transition:transform .45s var(--ease),border-color .45s}
+.plan:hover{transform:translateY(-6px)}
+.plan.hot{border-color:rgba(217,166,98,.55);background:linear-gradient(170deg,rgba(217,166,98,.07),var(--panel) 45%)}
+.plan-badge{align-self:flex-start;font-family:var(--fd);font-size:12px;font-weight:700;color:#141009;background:var(--tan);border-radius:999px;padding:5px 16px;margin-bottom:20px}
+.plan h3{font-size:23px;font-weight:700;margin-bottom:6px}
+.plan>p{font-size:14px;color:var(--muted);margin-bottom:26px}
+.plan ul{list-style:none;display:grid;gap:13px;margin-bottom:10px}
+.plan li{font-size:14.5px;color:var(--muted);display:flex;gap:12px;align-items:baseline}
+.plan li::before{content:"✓";color:var(--tan);font-weight:700;flex:none}
+.plans-note{margin-top:44px;display:flex;flex-direction:column;align-items:center;gap:22px;text-align:center}
+.plans-note p{color:var(--muted);font-size:15.5px;max-width:52ch}
+
+/* ---------- features checklist ---------- */
+.feats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px 40px;margin-top:50px;border-top:1px solid var(--line);padding-top:44px}
+.feat{display:flex;gap:13px;align-items:baseline;font-size:15px;color:var(--muted)}
+.feat::before{content:"✓";color:var(--tan);font-weight:700;flex:none}
+
+/* ---------- final CTA ---------- */
+.cta-fin{position:relative;text-align:center;padding:150px 0;overflow:hidden}
+.cta-fin::before{content:"";position:absolute;inset:0;background:radial-gradient(700px 380px at 50% 110%,rgba(217,166,98,.13),transparent 65%)}
+.cta-fin h2{font-size:clamp(36px,5.5vw,60px);font-weight:800;margin-bottom:18px;position:relative}
+.cta-fin p{color:var(--muted);font-size:17px;max-width:46ch;margin:0 auto 42px;position:relative}
+.cta-fin .row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;position:relative}
+.tiktok-link{display:inline-flex;align-items:center;gap:10px;color:var(--muted);font-size:14.5px;margin-top:34px;transition:color .3s;position:relative}
+.tiktok-link:hover{color:var(--text)}
+.tiktok-link img{width:16px;height:16px;opacity:.8}
+
+/* ---------- footer ---------- */
+footer{border-top:1px solid var(--line);padding:54px 0;background:var(--bg2)}
+footer .wrap{display:flex;align-items:center;gap:30px;flex-wrap:wrap}
+footer .logo{font-size:20px}
+.foot-links{display:flex;gap:26px;font-size:13.5px;color:var(--muted)}
+.foot-links a:hover{color:var(--text)}
+.foot-meta{margin-inline-start:auto;display:flex;align-items:center;gap:20px;font-size:13px;color:var(--dim)}
+.foot-meta a{display:inline-flex;align-items:center;gap:8px;transition:color .3s}
+.foot-meta a:hover{color:var(--tan2)}
+.foot-meta img{width:15px;height:15px;opacity:.7}
+.foot-num{font-family:var(--fl);direction:ltr}
+
+/* ---------- floating whatsapp ---------- */
+.fab{position:fixed;bottom:26px;left:26px;z-index:95;width:58px;height:58px;border-radius:999px;background:var(--panel);border:1px solid rgba(217,166,98,.5);display:flex;align-items:center;justify-content:center;box-shadow:0 16px 40px rgba(0,0,0,.5);transition:transform .3s var(--ease),background .3s}
+.fab:hover{transform:translateY(-4px) scale(1.05);background:var(--tan)}
+.fab img{width:26px;height:26px}
+.fab .b{display:none}
+.fab:hover .a{display:none}
+.fab:hover .b{display:block}
+
+/* ---------- reveal ---------- */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.rv2{transition-delay:.12s}.rv3{transition-delay:.24s}
+
+/* ---------- responsive ---------- */
+@media(max-width:1024px){
+  .works{grid-template-columns:repeat(2,1fr)}
+  .bento{grid-template-columns:repeat(2,1fr)}
+  .bn-big{grid-column:span 2;grid-row:span 1}
+  .feats{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:860px){
+  .nav-links{display:none}
+  .hero .wrap{grid-template-columns:1fr;gap:70px}
+  .hero{padding-top:130px}
+  .hero-ph{margin:0 auto;transform:rotate(0)}
+  .stats .wrap{grid-template-columns:repeat(2,1fr);gap:34px 0}
+  .stat{padding:4px 26px}
+  .stat:nth-child(2){border-inline-end:1px solid var(--line)}
+  .steps{grid-template-columns:1fr;gap:38px}
+  .steps::before{top:8px;bottom:8px;right:7px;left:auto;width:1px;height:auto}
+  .step{padding:0 36px 0 0}
+  .plans{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  section{padding:80px 0}
+  .wrap{padding:0 20px}
+  .works{grid-template-columns:1fr}
+  .bento{grid-template-columns:1fr;grid-auto-rows:240px}
+  .bn-big{grid-column:span 1}
+  .feats{grid-template-columns:1fr}
+  .stats .wrap{grid-template-columns:1fr 1fr}
+  .hero-ctas .btn{padding:13px 24px;font-size:14px}
+  .fab{bottom:18px;left:18px}
+}
+@media(prefers-reduced-motion:reduce){
+  .mq-track{animation:none}
+  .rv{opacity:1;transform:none;transition:none}
+  *{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<div class="grain"></div>
+<div id="navSentinel" style="position:absolute;top:0;height:60px;width:1px"></div>
+
+<nav id="nav">
+  <div class="wrap">
+    <a class="logo" href="#">علي<b>.</b></a>
+    <div class="nav-links">
+      <a href="#work">الأعمال</a>
+      <a href="#sectors">القطاعات</a>
+      <a href="#process">طريقة العمل</a>
+      <a href="#plans">الباقات</a>
+    </div>
+    <div class="nav-cta">
+      <a class="btn btn-tan btn-sm" href="https://wa.me/966505989304?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D8%B9%D9%84%D9%8A%D8%8C%20%D8%A3%D8%A8%D8%BA%D9%89%20%D9%85%D9%88%D9%82%D8%B9%20%D9%84%D9%85%D8%B4%D8%B1%D9%88%D8%B9%D9%8A" target="_blank" rel="noopener">اطلب موقعك</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===================== HERO ===================== -->
+<header class="hero">
+  <div class="hero-glow"></div>
+  <div class="wrap">
+    <div>
+      <p class="hi rv">أهلًا، أنا علي. مصمم مواقع للأعمال السعودية</p>
+      <h1 class="rv">علامتك تستاهل <em>حضورًا يليق بها</em></h1>
+      <p class="rv rv2">أصمم مواقع راقية للكوفيات والمطاعم والسبا والعيادات والمكاتب، تعكس هوية مشروعك وتحوّل الزائر إلى عميل.</p>
+      <div class="hero-ctas rv rv3">
+        <a class="btn btn-tan" href="https://wa.me/966505989304?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D8%B9%D9%84%D9%8A%D8%8C%20%D8%A3%D8%A8%D8%BA%D9%89%20%D9%85%D9%88%D9%82%D8%B9%20%D9%84%D9%85%D8%B4%D8%B1%D9%88%D8%B9%D9%8A" target="_blank" rel="noopener">
+          <img src="https://cdn.simpleicons.org/whatsapp/141009" alt="" width="17" height="17">اطلب موقعك
+        </a>
+        <a class="btn btn-ghost" href="#work">شاهد الأعمال</a>
+      </div>
+    </div>
+    <div class="hero-ph ph rv rv2">
+      <div class="ph-screen"><iframe data-src="https://az212z.github.io/mil-cafe/" title="معاينة موقع مِلء" loading="lazy"></iframe></div>
+      <span class="ph-tag">موقع حقيقي منشور الآن</span>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== MARQUEE ===================== -->
+<div class="mq" aria-label="علامات صممت لها مواقع">
+  <div class="mq-track" id="mqTrack">
+    <div class="mq-seq">
+      <span>مِلء</span><i></i><span>عند</span><i></i><span>أورورا</span><i></i><span>نولا</span><i></i><span>فرن ليلى</span><i></i><span>دي سبا</span><i></i><span>عيادات استبرق</span><i></i><span>فيورن</span><i></i><span>جيومتري</span><i></i><span>أوڤالو</span><i></i><span>سدرة</span><i></i><span>أوكاف</span><i></i><span>دورم</span><i></i><span>وِساع</span><i></i><span>بهيّ</span><i></i><span>مسرّة</span><i></i><span>ليت</span><i></i><span>سبت</span><i></i><span>مرو</span><i></i><span>ورقة وجد</span><i></i><span>آفاق علم</span><i></i><span>أويو نيل سبا</span><i></i>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== STATS ===================== -->
+<div class="stats">
+  <div class="wrap">
+    <div class="stat rv"><b class="lat">75<small>+</small></b><span>موقعًا مصممًا ومنشورًا</span></div>
+    <div class="stat rv rv2"><b class="lat">8</b><span>قطاعات مختلفة</span></div>
+    <div class="stat rv rv3"><b class="lat">7</b><span>مدن سعودية</span></div>
+    <div class="stat rv rv3"><b class="lat">0</b><span>قوالب جاهزة، كل موقع يُبنى من الصفر</span></div>
+  </div>
+</div>
+
+<!-- ===================== WORK ===================== -->
+<section id="work">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <h2>أعمال <em>حيّة</em>، مو صور</h2>
+      <p>كل بطاقة تحتها موقع منشور وشغّال في هذه اللحظة. اضغط على أي مشروع وافتحه وجرّبه بنفسك.</p>
+    </div>
+    <div class="tabs rv" role="tablist">
+      <button class="tab on" data-f="all">الكل</button>
+      <button class="tab" data-f="cafe">كوفيات</button>
+      <button class="tab" data-f="rest">مطاعم</button>
+      <button class="tab" data-f="spa">سبا وصالونات</button>
+      <button class="tab" data-f="clinic">عيادات</button>
+      <button class="tab" data-f="eng">هندسة وديكور</button>
+    </div>
+    <div class="works">
+      <a class="wk rv" data-c="cafe" href="https://az212z.github.io/mil-cafe/" target="_blank" rel="noopener">
+        <div class="wk-bar"><span>az212z.github.io/mil-cafe</span></div>
+        <div class="wk-prev"><div class="wk-load">جاري تحميل المعاينة</div><iframe data-src="https://az212z.github.io/mil-cafe/" title="مِلء" loading="lazy"></iframe></div>
+        <div class="wk-info"><div><h3>مِلء MIL</h3><p>قهوة مختصة · جدة</p></div><span class="wk-go">زيارة الموقع ←</span></div>
+      </a>
+      <a class="wk rv rv2" data-c="cafe" href="https://az212z.github.io/aand-cafe/" target="_blank" rel="noopener">
+        <div class="wk-bar"><span>az212z.github.io/aand-cafe</span></div>
+        <div class="wk-prev"><div class="wk-load">جاري تحميل المعاينة</div><iframe data-src="https://az212z.github.io/aand-cafe/" title="عند" loading="lazy"></iframe></div>
+        <div class="wk-info"><div><h3>عند Aand</h3><p>قهوة مختصة · تبوك</p></div><span class="wk-go">زيارة الموقع ←</span></div>
+      </a>
+      <a class="wk rv rv3" data-c="cafe" href="https://az212z.github.io/aurora-cafe/" target="_blank" rel="noopener">
+        <div class="wk-bar"><span>az212z.github.io/aurora-cafe</span></div>
+        <div class="wk-prev"><div class="wk-load">جاري تحميل المعاينة</div><iframe data-src="https://az212z.github.io/aurora-cafe/" title="أورورا" loading="lazy"></iframe></div>
+        <div class="wk-info"><div><h3>أورورا AURORA</h3><p>كوفي · تبوك</p></div><span class="wk-go">زيارة الموقع ←</span></div>
+      </a>
+      <a class="wk rv" data-c="rest" href="https://az212z.github.io/nola-restaurant/" target="_blank" rel="noopener">
+        <div class="wk-bar"><span>az212z.github.io/nola-restaurant</span></div>
+        <div class="wk-prev"><div class="wk-load">جاري تحميل المعاينة</div><iframe data-src="https://az212z.github.io/nola-restaurant/" title="نولا" loading="lazy"></iframe></div>
+        <div class="wk-info"><div><h3>نولا NOLA</h3><p>مطعم · تبوك</p></div><span class="wk-go">زيارة الموقع ←</span></div>
+      </a>
+      <a class="wk rv rv2" data-c="rest" href="https://az212z.github.io/forn-layla/" target="_blank" rel="noopener">
+        <div class="wk-bar"><span>az212z.github.io/forn-layla</span></div>
+        <div class="wk-prev"><div class="wk-load">جاري تحميل المعاينة</div><iframe data-src="https://az212z.github.io/forn-layla/" title="فرن ليلى" loading="lazy"></iframe></div>
+        <div class="wk-info"><div><h3>فرن ليلى</h3><p>مخبز ومطعم · تبوك</p></div><span class="wk-go">زيارة الموقع ←</span></div>
+      </a>
+      <a class="wk rv rv3" data-c="spa" href="https://az212z.github.io/dspa-salon/" target="_blank" rel="noopener">
+        <div class="wk-bar"><span>az212z.github.io/dspa-salon</span></div>
+        <div class="wk-prev"><div class="wk-load">جاري تحميل المعاينة</div><iframe data-src="https://az212z.github.io/dspa-salon/" title="دي سبا" loading="lazy"></iframe></div>
+        <div class="wk-info"><div><h3>دي سبا D SPA</h3><p>سبا نسائي · تبوك</p></div><span class="wk-go">زيارة الموقع ←</span></div>
+      </a>
+      <a class="wk rv" data-c="spa" href="https://az212z.github.io/oio-spa/" target="_blank" rel="noopener">
+        <div class="wk-bar"><span>az212z.github.io/oio-spa</span></div>
+        <div class="wk-prev"><div class="wk-load">جاري تحميل المعاينة</div><iframe data-src="https://az212z.github.io/oio-spa/" title="أويو نيل سبا" loading="lazy"></iframe></div>
+        <div class="wk-info"><div><h3>أويو OiO</h3><p>نيل سبا</p></div><span class="wk-go">زيارة الموقع ←</span></div>
+      </a>
+      <a class="wk rv rv2" data-c="clinic" href="https://az212z.github.io/istabraq-clinic/" target="_blank" rel="noopener">
+        <div class="wk-bar"><span>az212z.github.io/istabraq-clinic</span></div>
+        <div class="wk-prev"><div class="wk-load">جاري تحميل المعاينة</div><iframe data-src="https://az212z.github.io/istabraq-clinic/" title="عيادات استبرق" loading="lazy"></iframe></div>
+        <div class="wk-info"><div><h3>عيادات استبرق</h3><p>عيادات طبية · تبوك</p></div><span class="wk-go">زيارة الموقع ←</span></div>
+      </a>
+      <a class="wk rv rv3" data-c="eng" href="https://az212z.github.io/fiorn-decor/" target="_blank" rel="noopener">
+        <div class="wk-bar"><span>az212z.github.io/fiorn-decor</span></div>
+        <div class="wk-prev"><div class="wk-load">جاري تحميل المعاينة</div><iframe data-src="https://az212z.github.io/fiorn-decor/" title="فيورن" loading="lazy"></iframe></div>
+        <div class="wk-info"><div><h3>فيورن FIORN</h3><p>تصميم داخلي وديكور</p></div><span class="wk-go">زيارة الموقع ←</span></div>
+      </a>
+      <a class="wk rv" data-c="cafe" href="https://az212z.github.io/geometry-cafe/" target="_blank" rel="noopener">
+        <div class="wk-bar"><span>az212z.github.io/geometry-cafe</span></div>
+        <div class="wk-prev"><div class="wk-load">جاري تحميل المعاينة</div><iframe data-src="https://az212z.github.io/geometry-cafe/" title="جيومتري" loading="lazy"></iframe></div>
+        <div class="wk-info"><div><h3>جيومتري GEOMETRY</h3><p>كوفي ومخبز · جدة</p></div><span class="wk-go">زيارة الموقع ←</span></div>
+      </a>
+      <a class="wk rv rv2" data-c="cafe" href="https://az212z.github.io/ovalu-cafe/" target="_blank" rel="noopener">
+        <div class="wk-bar"><span>az212z.github.io/ovalu-cafe</span></div>
+        <div class="wk-prev"><div class="wk-load">جاري تحميل المعاينة</div><iframe data-src="https://az212z.github.io/ovalu-cafe/" title="أوڤالو" loading="lazy"></iframe></div>
+        <div class="wk-info"><div><h3>أوڤالو OVALU</h3><p>كوفي · الرياض</p></div><span class="wk-go">زيارة الموقع ←</span></div>
+      </a>
+      <a class="wk rv rv3" data-c="eng" href="https://az212z.github.io/wajd-paper/" target="_blank" rel="noopener">
+        <div class="wk-bar"><span>az212z.github.io/wajd-paper</span></div>
+        <div class="wk-prev"><div class="wk-load">جاري تحميل المعاينة</div><iframe data-src="https://az212z.github.io/wajd-paper/" title="ورقة وجد" loading="lazy"></iframe></div>
+        <div class="wk-info"><div><h3>ورقة وجد</h3><p>توزيعات وهدايا</p></div><span class="wk-go">زيارة الموقع ←</span></div>
+      </a>
+    </div>
+    <p class="work-note">هذه نبذة فقط. أكثر من 75 مشروعًا منشورًا، تجد جديدها أولًا بأول على <a href="https://www.tiktok.com/@ali.design02" target="_blank" rel="noopener">تيك توك ali.design02</a></p>
+  </div>
+</section>
+
+<!-- ===================== SECTORS ===================== -->
+<section id="sectors">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <h2>مهما كان مشروعك، <em>أصمم له</em></h2>
+      <p>كل قطاع له لغته البصرية الخاصة. أدرس هوية مشروعك وجمهوره، وأبني موقعًا يتكلم بلسانه.</p>
+    </div>
+    <div class="bento">
+      <div class="bn bn-big rv">
+        <img src="https://az212z.github.io/aand-cafe/img/storefront.jpg" alt="موقع كوفي" loading="lazy">
+        <div class="bn-txt"><h3>كوفيات وقهوة مختصة</h3><p>أكثر من 60 موقع كوفي: منيو بالأسعار، أجواء المكان، تقييمات قوقل، واتجاهات الخريطة.</p></div>
+      </div>
+      <div class="bn rv"><img src="https://az212z.github.io/nola-restaurant/img/hero.jpg" alt="موقع مطعم" loading="lazy"><div class="bn-txt"><h3>مطاعم ومخابز</h3><p>منيو شهي يفتح النفس</p></div></div>
+      <div class="bn rv rv2"><img src="https://az212z.github.io/dspa-salon/img/hero.jpg" alt="موقع سبا" loading="lazy"><div class="bn-txt"><h3>سبا وصالونات</h3><p>هدوء وفخامة وحجوزات</p></div></div>
+      <div class="bn rv"><img src="https://az212z.github.io/istabraq-clinic/img/hero.jpg" alt="موقع عيادة" loading="lazy"><div class="bn-txt"><h3>عيادات</h3><p>ثقة طبية وحجز سريع</p></div></div>
+      <div class="bn rv rv2"><img src="https://az212z.github.io/fiorn-decor/img/render.jpg" alt="موقع مكتب هندسي" loading="lazy"><div class="bn-txt"><h3>مكاتب هندسية وديكور</h3><p>معرض مشاريع يبهر العميل</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROCESS ===================== -->
+<section id="process">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <h2>من أول رسالة، إلى رابط <em>منشور</em></h2>
+      <p>طريقة عمل واضحة وسريعة. ما تحتاج تفهم بالتقنية، هذا شغلي أنا.</p>
+    </div>
+    <div class="steps">
+      <div class="step rv"><h3>تواصل</h3><p>أرسل اسم مشروعك على واتساب مع أي صور أو حسابات تواصل عندك.</p></div>
+      <div class="step rv"><h3>نرسم الهوية</h3><p>أدرس مشروعك وجمهوره، وأقترح عليك الألوان والطابع المناسب لعلامتك.</p></div>
+      <div class="step rv rv2"><h3>أصمم وأبني</h3><p>أبني الموقع كاملًا: المحتوى، الصور، المنيو أو الخدمات، وكل التفاصيل.</p></div>
+      <div class="step rv rv3"><h3>تستلم الرابط</h3><p>موقع منشور برابط مباشر جاهز للمشاركة، مع رمز QR تحطه على الطاولات.</p></div>
+    </div>
+    <div class="feats">
+      <div class="feat rv">متجاوب بالكامل مع الجوال</div>
+      <div class="feat rv">سرعة تحميل عالية</div>
+      <div class="feat rv">ربط خرائط قوقل والاتجاهات</div>
+      <div class="feat rv rv2">زر واتساب وطلب مباشر</div>
+      <div class="feat rv rv2">تهيئة الظهور في نتائج البحث</div>
+      <div class="feat rv rv2">رابط مباشر ورمز QR جاهز للطباعة</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PLANS ===================== -->
+<section id="plans">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <h2>باقات على قد <em>مشروعك</em></h2>
+      <p>تبدأ صغير أو تبدأ كبير، المهم تبدأ صح.</p>
+    </div>
+    <div class="plans">
+      <div class="plan rv">
+        <h3>البداية</h3>
+        <p>صفحة تعريفية أنيقة تطلق مشروعك بسرعة</p>
+        <ul>
+          <li>موقع صفحة واحدة بتصميم خاص</li>
+          <li>منيو أو قائمة خدمات بالأسعار</li>
+          <li>صور وأجواء المكان</li>
+          <li>خرائط قوقل وزر واتساب</li>
+        </ul>
+      </div>
+      <div class="plan hot rv rv2">
+        <span class="plan-badge">الأكثر طلبًا</span>
+        <h3>العلامة المتكاملة</h3>
+        <p>حضور كامل يبني علامتك التجارية وينمّيها</p>
+        <ul>
+          <li>كل ما في باقة البداية</li>
+          <li>هوية لونية وخطوط خاصة بعلامتك</li>
+          <li>أقسام إضافية: قصتك، التقييمات، الفروع</li>
+          <li>تهيئة الظهور في بحث قوقل</li>
+          <li>رمز QR للطاولات والمنيو</li>
+          <li>جولات تعديل حتى ترضى بالنتيجة</li>
+        </ul>
+      </div>
+      <div class="plan rv rv3">
+        <h3>طلب خاص</h3>
+        <p>عندك فكرة أكبر؟ نبنيها سوا</p>
+        <ul>
+          <li>متجر إلكتروني متكامل</li>
+          <li>أنظمة حجوزات ومواعيد</li>
+          <li>مواقع متعددة الصفحات والفروع</li>
+          <li>أي فكرة غير تقليدية في بالك</li>
+        </ul>
+      </div>
+    </div>
+    <div class="plans-note rv">
+      <p>السعر على قد حجم المشروع. أرسل تفاصيل مشروعك على واتساب ويوصلك عرض السعر بنفس اليوم.</p>
+      <a class="btn btn-tan" href="https://wa.me/966505989304?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D8%B9%D9%84%D9%8A%D8%8C%20%D8%A3%D8%A8%D8%BA%D9%89%20%D9%85%D9%88%D9%82%D8%B9%20%D9%84%D9%85%D8%B4%D8%B1%D9%88%D8%B9%D9%8A" target="_blank" rel="noopener">
+        <img src="https://cdn.simpleicons.org/whatsapp/141009" alt="" width="17" height="17">اطلب موقعك
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FINAL CTA ===================== -->
+<section class="cta-fin">
+  <div class="wrap">
+    <h2 class="rv">مشروعك الجاي؟ <span style="color:var(--tan)">خلنا نبدأه اليوم</span></h2>
+    <p class="rv rv2">أرسل اسم مشروعك على واتساب، وأرد عليك بتصور أولي وعرض سعر في نفس اليوم.</p>
+    <div class="row rv rv3">
+      <a class="btn btn-tan" href="https://wa.me/966505989304?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D8%B9%D9%84%D9%8A%D8%8C%20%D8%A3%D8%A8%D8%BA%D9%89%20%D9%85%D9%88%D9%82%D8%B9%20%D9%84%D9%85%D8%B4%D8%B1%D9%88%D8%B9%D9%8A" target="_blank" rel="noopener">
+        <img src="https://cdn.simpleicons.org/whatsapp/141009" alt="" width="17" height="17">اطلب موقعك
+      </a>
+    </div>
+    <a class="tiktok-link rv3" href="https://www.tiktok.com/@ali.design02" target="_blank" rel="noopener">
+      <img src="https://cdn.simpleicons.org/tiktok/f2efe8" alt="">تابع أعمالي الجديدة على تيك توك ali.design02
+    </a>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="wrap">
+    <a class="logo" href="#">علي<b>.</b></a>
+    <div class="foot-links">
+      <a href="#work">الأعمال</a>
+      <a href="#sectors">القطاعات</a>
+      <a href="#plans">الباقات</a>
+    </div>
+    <div class="foot-meta">
+      <a href="https://wa.me/966505989304" target="_blank" rel="noopener"><img src="https://cdn.simpleicons.org/whatsapp/a7a296" alt="واتساب"><span class="foot-num">0505989304</span></a>
+      <a href="https://www.tiktok.com/@ali.design02" target="_blank" rel="noopener"><img src="https://cdn.simpleicons.org/tiktok/a7a296" alt="تيك توك"><span class="lat">ali.design02</span></a>
+    </div>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/966505989304?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D8%B9%D9%84%D9%8A%D8%8C%20%D8%A3%D8%A8%D8%BA%D9%89%20%D9%85%D9%88%D9%82%D8%B9%20%D9%84%D9%85%D8%B4%D8%B1%D9%88%D8%B9%D9%8A" target="_blank" rel="noopener" aria-label="تواصل واتساب">
+  <img class="a" src="https://cdn.simpleicons.org/whatsapp/d9a662" alt="">
+  <img class="b" src="https://cdn.simpleicons.org/whatsapp/141009" alt="">
+</a>
+
+<script>
+/* nav background after scrolling past sentinel (no scroll listener) */
+const nav=document.getElementById('nav');
+new IntersectionObserver(([e])=>nav.classList.toggle('on',!e.isIntersecting)).observe(document.getElementById('navSentinel'));
+
+/* reveal on enter */
+const ro=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target)}}),{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.rv').forEach(el=>ro.observe(el));
+
+/* lazy-load live iframes only when near viewport */
+const io=new IntersectionObserver(es=>es.forEach(e=>{
+  if(e.isIntersecting){const f=e.target;f.src=f.dataset.src;io.unobserve(f);}
+}),{rootMargin:'500px'});
+document.querySelectorAll('iframe[data-src]').forEach(f=>io.observe(f));
+
+/* fit 390px-wide mobile iframes into their containers */
+function fit(){
+  document.querySelectorAll('.ph-screen,.wk-prev').forEach(box=>{
+    const f=box.querySelector('iframe');if(!f)return;
+    const s=box.clientWidth/390;
+    f.style.transform=`scale(${s})`;
+    f.style.height=(box.clientHeight/s)+'px';
+  });
+}
+fit();
+new ResizeObserver(fit).observe(document.body);
+
+/* duplicate marquee content for a seamless loop */
+const tr=document.getElementById('mqTrack');
+tr.appendChild(tr.querySelector('.mq-seq').cloneNode(true));
+
+/* work filter */
+const cards=document.querySelectorAll('.wk');
+document.querySelectorAll('.tab').forEach(t=>t.addEventListener('click',()=>{
+  document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on'));
+  t.classList.add('on');
+  const f=t.dataset.f;
+  cards.forEach(c=>c.classList.toggle('hide',f!=='all'&&c.dataset.c!==f));
+}));
+</script>
+</body>
+</html>
